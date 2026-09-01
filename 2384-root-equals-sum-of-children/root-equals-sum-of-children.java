@@ -15,6 +15,9 @@
  */
 class Solution {
     public boolean checkTree(TreeNode root) {
-                return root.val == root.left.val + root.right.val;
+        if(root == null) return true;
+        if(root.left == null && root.right == null) return false;
+
+        return (root.left.val + root.right.val == root.val);
     }
 }
