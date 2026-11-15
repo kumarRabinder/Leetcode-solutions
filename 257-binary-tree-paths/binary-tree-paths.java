@@ -14,8 +14,8 @@
  * }
  */
 class Solution {
-    List<String> ans = new ArrayList<>();
     public List<String> binaryTreePaths(TreeNode root) {
+        List<String> ans = new ArrayList<>();
         if (root == null) {
             return ans;
         }
